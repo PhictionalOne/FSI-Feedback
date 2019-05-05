@@ -1,0 +1,6 @@
+# gitignore for FSI-Feedback
+# Belonging to TeX
+*.aux
+*.log
+*.out
+*.gz

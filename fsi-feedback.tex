@@ -1,0 +1,62 @@
+\documentclass[a4paper]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{fdsymbol}
+
+%Größe der Ränder setzen
+\geometry{a4paper,left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+% ----------------------- TODO ---------------------------
+% Hier die wichtigen Infos eintragen
+
+\newcommand{\VERANSTALTUNG}{FSI-Workshop: Git I}
+\newcommand{\SPEAKER}{Alice Bob}
+% Was soll auf die Rückseite gemalt werden?
+\newcommand{\OBJECT}{eine Kartoffel}
+
+% ---------------------- IGNORE --------------------------
+\begin{document}
+% Befehle für die Fragen
+\newcommand{\question}[1]{
+	\noindent
+	\begin{tabular}{|p{\textwidth}|}
+		\hline \textsf{#1} \\
+		\hline \\[80pt]
+		\hline
+	\end{tabular} \\
+}
+
+\newcommand{\StudSem}{
+	\begin{tabular}{|c|l|}
+		\hline Studiengang & Fachsemester\\
+		\hline & \\
+		\hline
+	\end{tabular}
+}
+
+% Kopf- und Fußzeile
+\pagestyle{fancy}
+\fancyhead[L]{\LARGE Feedback \VERANSTALTUNG \small \\ by \SPEAKER}
+\fancyhead[C]{}
+\fancyhead[R]{\StudSem}
+\fancyfoot{}
+
+% ----------------------- TODO ---------------------------
+% Hier werden die Fragen eingetragen:
+
+\question{Was hab ich verstanden?}\\\\
+\question{Was hab ich nicht verstanden?}\\\\
+\question{Was hat mir gut gefallen?}\\\\
+\question{Was hat mir nicht gefallen?}\\\\
+\question{Was ich dem Vortragenden sagen möchte?}\\
+
+
+\noindent
+\large Bewertung: $\largewhitestar \largewhitestar \largewhitestar \largewhitestar \largewhitestar$ \\\\
+\noindent
+Male auf die Rückseite \OBJECT:
+
+
+\end{document}
